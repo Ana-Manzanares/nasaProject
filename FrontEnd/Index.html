@@ -1,30 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de prueba</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Establecer una altura fija para las tarjetas */
+        .card {
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <div id="pageTittle">
-        <h1>Everything starts with water</h1>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Everything starts with water</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Explore the water cycle</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-warning text-white">
+                    <div class="card-body" onclick="goToMonitorPage()">
+                        <h5 class="card-title">How NASA monitors water on Earth?</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-danger text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Efects of climate change</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-info text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Regional Stories</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-secondary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Games and challenges</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="apartados">
-        <div>
-            <label>Explore the water cycle</label>
-        </div>
-        <div>
-            <a href="..//FrontEnd/html/monitorPage.html">How NASA monitors water on Earth?</a>
-        </div>
-        <div>
-            <label>Efects of climate change</label>
-        </div>
-            <label>Regional Stories</label>
-        <div>
-            <label>Games and challenges</label>
-           
-        </div>
-    </div>
-         
 </body>
+<script>
+    function goToMonitorPage() {
+        window.location.href = "..//FrontEnd/html/monitorPage.html"; 
+    }
+</script>
 </html>
