@@ -16,7 +16,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card bg-primary text-white">
+                <div class="card bg-primary text-white" id="startsWithWater">
                     <div class="card-body">
                         <h5 class="card-title">Everything starts with water</h5>
                     </div>
@@ -65,4 +65,27 @@
         window.location.href = "..//FrontEnd/html/monitorPage.html"; 
     }
 </script>
+<style>
+    .startsWithWater {
+        height: 100px;
+        transition: background-image 0.3s ease;
+        background-image: none; 
+    }
+
+    /* Agrega un ID para la tarjeta en la que deseas aplicar el efecto */
+    #startsWithWater:hover {
+        background-image: url('http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcR4q6_UQcESKRPmKR07zh312z-ISU1Q0VwwGIqhR1lZv7B4ZLHroXeRD25eUtEq1zpggfJkmAnqVQTOBL0OFW0'); /* Reemplaza 'URL_DE_TU_IMAGEN' con la URL de tu imagen */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Estilo para el título */
+    .card-title {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: black;
+    }
+</style>
 </html>
