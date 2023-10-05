@@ -23,37 +23,37 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-success text-white">
+                <div class="card bg-success text-white" id="waterCycle">
                     <div class="card-body">
                         <h5 class="card-title">Explore the water cycle</h5>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-warning text-white">
+                <div class="card bg-warning text-white" id="nasaMonitor">
                     <div class="card-body" onclick="goToMonitorPage()">
                         <h5 class="card-title">How NASA monitors water on Earth?</h5>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-danger text-white">
+                <div class="card bg-danger text-white" id="climaticChange">
                     <div class="card-body">
                         <h5 class="card-title">Efects of climate change</h5>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-info text-white">
+                <div class="card bg-info text-white" id="regional">
                     <div class="card-body">
                         <h5 class="card-title">Regional Stories</h5>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white">
-                    <div class="card-body">
-                        <h5 class="card-title">Games and challenges</h5>
+                <div class="card bg-secondary text-white" id="howCanIHelp">
+                    <div class="card-body" onclick="goToCanIHelpPage()"></div>
+                        <h5 class="card-title">How can I help?</h5>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,10 @@
 </body>
 <script>
     function goToMonitorPage() {
-        window.location.href = "..//FrontEnd/html/monitorPage.html"; 
+        window.location.href = "../FrontEnd/html/monitorPage.html"; 
+    }
+    function goToCanIHelpPage() {
+        window.location.href = "../FrontEnd/html/howCanIHelp.html"; 
     }
 </script>
 <style>
