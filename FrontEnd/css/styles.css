@@ -4,9 +4,66 @@
     background-image: none; 
 }
 
-/* Agrega un ID para la tarjeta en la que deseas aplicar el efecto */
 #startsWithWater:hover {
-    background-image: url('http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcR4q6_UQcESKRPmKR07zh312z-ISU1Q0VwwGIqhR1lZv7B4ZLHroXeRD25eUtEq1zpggfJkmAnqVQTOBL0OFW0'); /* Reemplaza 'URL_DE_TU_IMAGEN' con la URL de tu imagen */
+    background-image: url('http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcR4q6_UQcESKRPmKR07zh312z-ISU1Q0VwwGIqhR1lZv7B4ZLHroXeRD25eUtEq1zpggfJkmAnqVQTOBL0OFW0'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.waterCycle {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+
+#waterCycle:hover {
+    background-image: url('https://gpm.nasa.gov/education/sites/default/files/article_images/Water-Cycle-Art2A.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nasaMonitor {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+
+#nasaMonitor:hover {
+    background-image: url('https://spaceplace.nasa.gov/review/geo-orbits/goesr_satellite-lrg.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.climaticChange {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+
+#climaticChange:hover {
+    background-image: url('https://delegacion.illesbalears.csic.es/wp-content/uploads/2021/02/cambio-climatico-causas-consecuencias-2.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.regional {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+#regional:hover {
+    background-image: url(' https://gpm.nasa.gov/education/sites/default/files/styles/resource_top_image/public/resource_images/show%20me%20the%20water.png?itok=5EkS-yLk'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.howCanIHelp {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+#howCanIHelp:hover {
+    background-image: url(' https://whiteandburke.com/wp-content/uploads/2020/05/how-can-i-help.png'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,5 +74,15 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: black;
+    color: white;
+}
+body {
+    background-image: url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/12/nueva-mision-nasa-sumerge-oceanos-luchar-cambio-climatico-2902382.jpg?tf=1200x'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center center; 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
 }
