@@ -1,22 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/regionalHistories.css">
     <title>Climate Change</title>
 </head>
+
 <body>
-    <div id="title">
-        <h1>Changing Waters: Impact of Climate Change in Four Regions of the World</h1>
+    <div class="navbar">
+        <a href="../Index.html">Home</a>
+        <a href="../html/waterCycle.html">Water Cycle</a>
+        <a href="../html/monitorPage.html">How Nasa Monitors Earth?</a>
+        <a href="../html/howCanIHelp.html">How Can I Help?</a>
     </div>
-    <div>
-        <p>Welcome to a journey around the world where we will explore a pressing and highly relevant topic: climate change and its impact on the global water cycle. Climate change is a global phenomenon that is altering the way our natural environment functions, and one of its most evident effects lies in the distribution and availability of the most essential resource for life: water.
-            As we progress through this story, we will focus on four particular regions, each with its own unique tale of challenges and adaptation in the face of a changing climate. These regions, though geographically distant, share a vital connection through the water cycle, which is influenced by climate transformations on a global scale.
-            </p>
+    <div class="center-content">
+        <div class="content">
+            <div id="title">
+                <h1 style="font-size: 50px; color:cornsilk;font-family: cursive;">Changing Waters</h1>
+                <div>
+                    <h1 style="font-size: 30px; color:cornsilk;font-family: cursive;"> Impact of Climate Change in Four
+                        Regions of the World</h1>
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 20px;color:antiquewhite;">Welcome to a journey around the world where we'll
+                    explore a highly relevant topic: climate change and its impact on the global water
+                    cycle. Climate change is a global phenomenon that is altering the way our natural environment
+                    functions, and one of its most evident effects lies in the distribution and availability of the most
+                    essential resource for life: water.
+                    As we progress through this story, we'll focus on four particular regions, each with its own
+                    unique tale of challenges and adaptation in the face of a changing climate. These regions, though
+                    geographically distant, share a vital connection through the water cycle, which is influenced by
+                    climate transformations on a global scale.
+                </p>
+            </div>
+            <div>
+                <img src="https://energyeducation.ca/wiki/images/a/ad/Ocean_circulation_conveyor_belt.jpg"
+                    style="height: 300px; margin-left: 25%;">
+            </div>
+            <div class="container mt-5">
+                <div class="row">            
+                    <div class="col-md-3 mb-3" style="margin-bottom: 20px;">
+                        <div class="card bg-white rounded-lg" id="amazon" style="background-color: darkgreen !important;">
+                            <div class="card-body text-dark"  onclick="goToAmazon()">
+                                <h5 class="card-title">The Amazon</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div  class="card bg-white rounded-lg" id="artic" style="background-color: cornflowerblue !important; ">
+                            <div class="card-body text-dark" onclick="goToArtic()">
+                                <h5 class="card-title">The Artic</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div  class="card bg-white rounded-lg" id="sahara" style="background-color: darkorange !important;">
+                            <div class="card-body text-dark" onclick="goToSahara()">
+                                <h5 class="card-title">The Sahara</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div  class="card bg-white rounded-lg" id="pacificIsland" style="background-color: dodgerblue !important;">
+                            <div class="card-body text-dark" onclick="goToPacific()"></div>
+                                <h5 class="card-title">The Pacific Islands</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
     </div>
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWVQ-pzI6ZCCojo1nIatVo0J1emdB_g6_Rte1-dYpJvnHXLLvyFLwIpF9Rw73cwiDz1U&usqp=CAU">
-    </div>
-    
+   
 </body>
+<script>
+     function goToAmazon() {
+        window.location.href = "../html/amazon.html"; 
+    }
+    function goToArtic() {
+        window.location.href = "../html/articChanges.html"; 
+    }
+    function goToSahara() {
+        window.location.href = "../html/sahara.html"; 
+    }
+    function goToPacific() {
+        window.location.href = "../html/pacificislands.html"; 
+    }
+</script>
 </html>
