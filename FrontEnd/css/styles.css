@@ -1,15 +1,3 @@
-.startsWithWater {
-    height: 100px;
-    transition: background-image 0.3s ease;
-    background-image: none; 
-}
-
-#startsWithWater:hover {
-    background-image: url('http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcR4q6_UQcESKRPmKR07zh312z-ISU1Q0VwwGIqhR1lZv7B4ZLHroXeRD25eUtEq1zpggfJkmAnqVQTOBL0OFW0'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 .waterCycle {
     height: 100px;
@@ -52,7 +40,7 @@
     background-image: none; 
 }
 #regional:hover {
-    background-image: url(' https://gpm.nasa.gov/education/sites/default/files/styles/resource_top_image/public/resource_images/show%20me%20the%20water.png?itok=5EkS-yLk'); 
+    background-image: url('http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcR4q6_UQcESKRPmKR07zh312z-ISU1Q0VwwGIqhR1lZv7B4ZLHroXeRD25eUtEq1zpggfJkmAnqVQTOBL0OFW0'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

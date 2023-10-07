@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/howCanIHelp.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>How Can I Help the Planet?</title>
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" style="display: block">
         <a href="../Index.html">Home</a>
-        <a href="#explore">Everything starts with water</a>
-        <a href="#about">Water cycle</a>
+        <a href="../html/waterCycle.html">Water cycle</a>
         <a href="../html/monitorPage.html">Monitorin the Earth</a>
         <a href="">Climatic Change</a>
         <a href="">Regional Stories</a>
@@ -20,97 +20,121 @@
     <div class="center-content">
         <div class="content">
             <!-- content -->
-            <h1 style="font-size: 100px;">How Can I Help the planet?</h1>
-            <p style="font-size: 25px;">The small changes of your life can do more than you think...</p>
-            <p style="font-size: 25px;">Check the changes that you can make!</p>
+            <div id="climaticChange">
+                <div>
+                    <h1 style="font-size: 100px; color:cornsilk;">How Can I Help the planet?</h1>
+                    <p style="font-size: 25px; color:antiquewhite;">The small changes of your life can do more than you think...</p>
+                </div>
+            </div>      
+            <div  id="climaticChange" style="margin-top: 100px;">
+                <div >
+                    <p style="font-size: 25px;color:antiquewhite;">Check the changes that you can make!</p>
+                </div>
+            </div>     
             <!--- list ---->
             <div style="margin-bottom: 20px;">
-                <label for="clickShower" style="cursor: pointer;">Shower</label>
+                <label for="clickShower" style="cursor: pointer; font-weight: bold;font-size: larger; color:antiquewhite;" >In the Shower</label>
                 <input type="checkbox" id="clickShower" style="display: none;">
                 <div class="displayShower">
-                    <div>
-                        <p>Did you know that shower shoud durate 5 minutes, wasting only 100L of water? That means that
-                            for every minute that you waste in the shower, you're wasting 20L of water</p>
-                        <label> You think thats nothing? Lets make some math!</label>
-                    </div>
-                    <div>
-                        <input type="number" id="minuteShower"></input><label style="margin-left: 20px;">How many
-                            minutes to shower?</label>
-                    </div>
-                    <div>
-                        <input type="number" id="numberShower"></input><label style="margin-left: 20px;">How many
-                            showers?</label>
-                    </div>
-                    <div>
-                        <button class="bg-primary" onclick="calculateWasteLiters()">Calculate</button>
-                    </div>
-                    <div id="resultShowerDiv" style="display: none;">
-                        <label id="ResultShower"></label>
+                    <div class="card bg-white rounded-lg" id="climaticChange">
+                        <div class="card-body text-dark">
+                            <div>
+                                <p>Did you know that shower shoud durate 5 minutes, wasting only 100L of water? That means that
+                                    for every minute that you waste in the shower, you're wasting 20L of water</p>
+                                <label> You think thats nothing? Lets make some math!</label>
+                            </div>
+                            <div>
+                                <input type="number" id="minuteShower"></input><label style="margin-left: 20px;">How many
+                                    minutes to shower?</label>
+                            </div>
+                            <div>
+                                <input type="number" id="numberShower"></input><label style="margin-left: 20px;">How many
+                                    showers?</label>
+                            </div>
+                            <div>
+                                <button class="bg-primary" onclick="calculateWasteLiters()">Calculate</button>
+                            </div>
+                            <div id="resultShowerDiv" style="display: none;margin-top: 20px">
+                                <label id="ResultShower" ></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div style="margin-bottom: 20px;">
-                <label for="clickTeeth" style="cursor: pointer;">Brush your teeth</label>
+                <label for="clickTeeth" style="cursor: pointer; font-weight: bold;font-size: larger; color:antiquewhite;">Brushing your teeth</label>
                 <input type="checkbox" id="clickTeeth" style="display: none;">
                 <div class="displayTeeth">
-                    <div>
-                        <p>If we brush our teeth with the tap constantly open, we can spend an average of 20 liters in
-                            each wash, which is an average of at least 60 liters of water (if we brush our teeth three
-                            times a day)</p>
-                        <label> You think thats nothing? Lets make some math!</label>
-                    </div>
-                    <div>
-                        <input type="number" id="daysBrush"></input><label style="margin-left: 20px;">How many
-                            days?</label>
-                    </div>
-                    <div>
-                        <button class="bg-primary" style="margin-bottom: 15px;" onclick="calculateWasteLitersBrush()">Calculate</button>
-                    </div>
-                    <div id="resultBrushDiv" style="display: none;">
-                        <label id="ResultBrush"></label>
+                    <div class="card bg-white rounded-lg" id="climaticChange">
+                        <div class="card-body text-dark">
+                            <div>
+                                <p>If we brush our teeth with the tap constantly open, we can spend an average of 20 liters in
+                                    each wash, which is an average of at least 60 liters of water (if we brush our teeth three
+                                    times a day)</p>
+                                <label> You think thats nothing? Lets make some math!</label>
+                            </div>
+                            <div>
+                                <input type="number" id="daysBrush"></input><label style="margin-left: 20px;">How many
+                                    days?</label>
+                            </div>
+                            <div>
+                                <button class="bg-primary" style="margin-bottom: 15px;" onclick="calculateWasteLitersBrush()">Calculate</button>
+                            </div>
+                            <div id="resultBrushDiv" style="display: none;">
+                                <label id="ResultBrush"></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div style="margin-bottom: 20px;">
-                <label for="clickBathTub" style="cursor: pointer;">Bath Tub</label>
+                <label for="clickBathTub" style="cursor: pointer; font-weight: bold;font-size: larger;color:antiquewhite;">Shower or Bath Tub?</label>
                 <input type="checkbox" id="clickBathTub" style="display: none;">
                 <div class="displayBathTub">
-                    <div>
-                        <p>If we take a bathtub, we wasted almost 300L, instead of the 100L that you waste with a 5 minute shower</p>
-                        <label> You think thats nothing? Lets make some math!</label>
-                    </div>
-                    <div>
-                        <input type="number" id="daysBathTub"></input><label style="margin-left: 20px;">How many days?</label>
-                    </div>
-                    <div>
-                        <button class="bg-primary" style="margin-bottom: 15px;" onclick="calculateWasteLitersBathTub()">Calculate</button>
-                    </div>
-                    <div id="resultBathTubDiv" style="display: none;">
-                        <label id="ResultBathTub"></label>
+                    <div class="card bg-white rounded-lg" id="climaticChange">
+                        <div class="card-body text-dark">
+                            <div>
+                                <p>If we take a bathtub, we wasted almost 300L, instead of the 100L that you waste with a 5 minute shower</p>
+                                <label> You think thats nothing? Lets make some math!</label>
+                            </div>
+                            <div>
+                                <input type="number" id="daysBathTub"></input><label style="margin-left: 20px;">How many days?</label>
+                            </div>
+                            <div>
+                                <button class="bg-primary" style="margin-bottom: 15px;" onclick="calculateWasteLitersBathTub()">Calculate</button>
+                            </div>
+                            <div id="resultBathTubDiv" style="display: none;">
+                                <label id="ResultBathTub"></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div style="margin-bottom: 20px;">
-                <label for="clickOthers" style="cursor: pointer;">Others</label>
+                <label for="clickOthers" style="cursor: pointer; font-weight: bold;font-size: larger;color:antiquewhite;">Others changes!</label>
                 <input type="checkbox" id="clickOthers" style="display: none;">
                 <div class="displayOthers">
-                    <div>
-                        <p>There's more things that we can make to help the planet!</p>
+                    <div class="card bg-white rounded-lg" id="climaticChange">
+                        <div class="card-body text-dark">
+                            <div>
+                                <p>There's more things that we can make to help the planet!</p>
+                            </div>
+                                <ul>
+                                    <li>
+                                        <label>Washing Machine:</label>
+                                        <p>Make sure the washer is completely full before using it.</p>
+                                    </li>
+                                    <li>
+                                        <label>Dishwasher Machine</label>
+                                        <p>Make sure the Dishwasher is completely full before using it.</p>
+                                    </li>
+                                    <li>
+                                        <label>WC:</label>
+                                        <p>Low-flush toilets use less water per flush than older models. Consider updating them if possible.</p>
+                                    </li>
+                                </ul>
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <label>Washing Machine:</label>
-                            <p>Make sure the washer is completely full before using it.</p>
-                        </li>
-                        <li>
-                            <label>Dishwasher Machine</label>
-                            <p>Make sure the Dishwasher is completely full before using it.</p>
-                        </li>
-                        <li>
-                            <label>WC:</label>
-                            <p>Low-flush toilets use less water per flush than older models. Consider updating them if possible.</p>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -127,13 +151,17 @@
 
     toggleShower.addEventListener("change", function () {
         if (this.checked) {
-            showerDisplay.style.display = "block"; // show
+        showerDisplay.style.maxHeight = "fit-content";
+        showerDisplay.style.opacity = "1";
         } else {
-            showerDisplay.style.display = "none"; // hide
-            minuteShower.value =""
-            numberShower.value =""
-            divShower.style.display = 'none'
-        }
+
+        showerDisplay.style.maxHeight = "0";
+        showerDisplay.style.opacity = "0";
+
+        minuteShower.value = "";
+        numberShower.value = "";
+        divShower.style.display = "none";
+    }
     });
 
     function calculateWasteLiters() {
@@ -146,11 +174,13 @@
                 normalLiters = 100 * numberShower.value
                 total = Math.abs(result - normalLiters)
                 if (result > normalLiters) {
-                    labelShower.textContent = "You have wasted " + total + " liters"
+                    labelShower.textContent = "You have wasted " + total + " liters of water!"
+                    labelShower.style.color="red"
                 } else if (result == normalLiters) {
                     labelShower.textContent = "Congratulations, all the showers were as it shoud be"
                 } else {
-                    labelShower.textContent = "you saved " + total + " liters, Hurray !"
+                    labelShower.textContent = "You saved " + total + " water liters, Hurray !"
+                    labelShower.style.color="green"
                 }
             }
 
@@ -167,9 +197,11 @@
 
     toggleBrush.addEventListener("change", function () {
         if (this.checked) {
-            brushDisplay.style.display = "block"; // show
+            brushDisplay.style.maxHeight = "fit-content";
+            brushDisplay.style.opacity = "1";
         } else {
-            brushDisplay.style.display = "none"; // hide
+            brushDisplay.style.maxHeight = "0";
+            brushDisplay.style.opacity = "0";
             daysBrush.value =""
             divBrush.style.display = 'none'
         }
@@ -179,6 +211,7 @@
         if (daysBrush.value != "" && daysBrush.value != null && daysBrush.value != 0) {
             result = daysBrush.value * 20 * 3
             labelBrush.textContent = "You wasted " + result + " liters!"
+            labelBrush.style.color = "red"
             divBrush.style.display = 'block'
         }
 
@@ -192,9 +225,11 @@
 
     toggleBathTube.addEventListener("change", function () {
         if (this.checked) {
-            BathTubeDisplay.style.display = "block"; // show
+            BathTubeDisplay.style.maxHeight = "fit-content";
+            BathTubeDisplay.style.opacity = "1";
         } else {
-            BathTubeDisplay.style.display = "none"; // hide
+            BathTubeDisplay.style.maxHeight = "0";
+            BathTubeDisplay.style.opacity = "0";
             daysBathTub.value =""
             divBathTub.style.display = 'none'
         }
@@ -204,6 +239,7 @@
         if (daysBathTub.value != "" && daysBathTub.value != null && daysBathTub.value != 0) {
             result = daysBathTub.value * 200
             labelBathTub.textContent = "You wasted " + result + " liters!"
+            labelBathTub.style.color = "red"
             divBathTub.style.display = 'block'
         }
 
@@ -213,9 +249,11 @@
 
     toggleOther.addEventListener("change", function () {
         if (this.checked) {
-            OtherDisplay.style.display = "block"; // show
+            OtherDisplay.style.maxHeight = "fit-content";
+            OtherDisplay.style.opacity = "1";
         } else {
-            OtherDisplay.style.display = "none"; // hide
+            OtherDisplay.style.maxHeight = "0";
+            OtherDisplay.style.opacity = "0";
         }
     }); 
 </script>
