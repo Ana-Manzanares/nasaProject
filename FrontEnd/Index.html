@@ -15,37 +15,30 @@
 <body>
     <div class="container mt-5">
         <div class="row">            
-            <div class="col-md-4 mb-4">
-                <div class="card bg-success text-white" id="waterCycle">
-                    <div class="card-body">
+            <div class="col-md-6 mb-6" style="margin-bottom: 20px;">
+                <div class="card bg-white rounded-lg" id="waterCycle" style="background-color: cadetblue !important;">
+                    <div class="card-body text-dark"  onclick="goToWaterCycle()">
                         <h5 class="card-title">Explore the water cycle</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-danger text-white" id="climaticChange">
-                    <div class="card-body">
-                        <h5 class="card-title">Efects of climate change</h5>
+            <div class="col-md-6 mb-6">
+                <div  class="card bg-white rounded-lg" id="climaticChange" style="background-color: cornflowerblue !important; ">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Climate change and its Effects</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-warning text-white" id="nasaMonitor">
-                    <div class="card-body" onclick="goToMonitorPage()">
+            <div class="col-md-6 mb-6">
+                <div  class="card bg-white rounded-lg" id="nasaMonitor" style="background-color: darkseagreen !important;">
+                    <div class="card-body text-dark" onclick="goToMonitorPage()">
                         <h5 class="card-title">How NASA monitors water on Earth?</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-info text-white" id="regional">
-                    <div class="card-body">
-                        <h5 class="card-title">Regional Stories</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white" id="howCanIHelp">
-                    <div class="card-body" onclick="goToCanIHelpPage()"></div>
+            <div class="col-md-6 mb-6">
+                <div  class="card bg-white rounded-lg" id="howCanIHelp" style="background-color: dodgerblue !important;">
+                    <div class="card-body text-dark" onclick="goToCanIHelpPage()"></div>
                         <h5 class="card-title">How can I help?</h5>
                     </div>
                 </div>
@@ -59,6 +52,9 @@
     }
     function goToCanIHelpPage() {
         window.location.href = "../FrontEnd/html/howCanIHelp.html"; 
+    }
+    function goToWaterCycle() {
+        window.location.href = "../FrontEnd/html/waterCycle.html"; 
     }
 </script>
 <style>
