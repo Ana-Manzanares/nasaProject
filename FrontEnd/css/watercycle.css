@@ -1,18 +1,20 @@
 .navbar {
     background-color: #333; 
     overflow: hidden;
-    position: sticky;
+    position: sticky !important;
     top: 0;
+    justify-content: normal !important;
     padding: 0% !important;
 }
 
 .navbar a {
     float: left;
-    display: block;
+    display: block !important;
     color: white;
     text-align: center;
     padding: 14px 16px; 
     text-decoration: none; 
+    justify-content: normal !important;
 }
 
 .navbar a:hover {
@@ -22,7 +24,7 @@
 html,body {
     margin: 0;
     padding: 0;
-    background-image: url('https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80'); 
+    background-image: url('https://images.unsplash.com/photo-1457327289196-f38b88d97147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80'); 
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -39,25 +41,31 @@ html,body {
     padding: 20px;
     overflow-y: auto; 
 }
-#shotDescription {
+#descriptionEvap {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-#GPMDescription {
+#descriptionTrans {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-#SMAPDescription {
+#descriptionConde {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-#GraceDescription {
+#descriptionPrep {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+#descriptionAcc {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
