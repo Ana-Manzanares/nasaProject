@@ -1,0 +1,100 @@
+.navbar {
+    background-color: #333; 
+    overflow: hidden;
+    position: sticky !important;
+    top: 0;
+    justify-content: normal !important;
+    padding: 0% !important;
+}
+
+.navbar a {
+    float: left;
+    display: block !important;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; 
+    justify-content: normal !important;
+}
+
+.navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://picjumbo.com/wp-content/uploads/calm-sea-wallpaper-free-photo-2210x1473.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center center; 
+    height: fit-content !important; 
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 66.66%; 
+    padding: 20px;
+    overflow-y: auto; 
+}
+.amazon {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+
+#amazon:hover {
+    background-image: url('https://www.fundacionaquae.org/wp-content/uploads/2019/07/rio-amazonas.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sahara {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+
+#sahara:hover {
+    background-image: url('https://fotografias.lasexta.com/clipping/cmsimages02/2023/07/12/5FAB475B-9C9F-4214-86CB-EA7C820B7929/curiosidades-desierto-sahara-que-quiza-desconocias_98.jpg?crop=1280,720,x0,y0&width=1900&height=1069&optimize=high&format=webply'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.artic {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+
+#artic:hover {
+    background-image: url('https://humanidades.com/wp-content/uploads/2018/07/oceano-artico-1-e1571703926449.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pacificIsland {
+    height: 100px;
+    transition: background-image 0.3s ease;
+    background-image: none; 
+}
+
+#pacificIsland:hover {
+    background-image: url('https://i.guim.co.uk/img/media/b476d733167dc4ee5f1b74ca9204c8ae3acf4561/0_195_5103_3062/master/5103.jpg?width=620&quality=85&auto=format&fit=max&s=c9e39436e41a5c4c9bc08f41bb76a3bf'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card {
+    height: 100px;
+}
+.card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
