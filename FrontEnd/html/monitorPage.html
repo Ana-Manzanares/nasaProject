@@ -4,65 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/monitoring.css">
+    <title>Monitoring the Earth</title>
 </head>
 
 <body>
-    <div id="pageTittle">
-        <h1>How NASA monitoring the water on Earth?</h1>
-
+    <div class="navbar">
+        <a href="../Index.html">Home</a>
+        <a href="../html/waterCycle.html">Water cycle</a>
+        <a href="">Climatic Change</a>
+        <a href="">Regional Stories</a>
+        <a href="../html/howCanIHelp.html">How Can I Help?</a>
     </div>
-    <div id="apartados">
-        <div>
-            <label>SWOT: Surface Water and Ocean Topography</label>
-            <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SWOT_spacecraft_model.png/1280px-SWOT_spacecraft_model.png" style="height: 300px;"></img>
-            </div>
-            <div>
-                <p>•Mission: SWOT is a satellite designed to measure the topography of Earth's water surface, including oceans, rivers, lakes and reservoirs.
-                    •Purpose: Its main objective is to provide accurate measurements of water storage in surface water bodies. These measurements help track changes in water level, which is essential for monitoring floods, droughts and water resource management
-                </p>
-            </div>
-        </div>
+    <div class="center-content">
+        <div class="content">
+            <div id="pageTittle">
+                <div>
+                    <h1 style="font-size: 75px; color:cornsilk;">How NASA monitores the water on Earth?</h1>
+                    <p style="font-size: 25px; color:antiquewhite;margin-bottom: 20px;">Let's check a small list of the satellites that controls the water on Earth...</p>
+                </div>
+            </div>  
+            <div id="apartados" >
+                <div style="margin-top: 20px; margin-bottom: 20px;">
+                    <div style="margin-left: 25%;">
+                        <label style="font-size: 25px; color:antiquewhite" >SWOT: Surface Water and Ocean Topography</label>
+                        <div style="margin-top: 20px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/SWOT_spacecraft_model.png/1280px-SWOT_spacecraft_model.png"
+                                style="height: 300px;" onclick="showShotDescription()"></img>
+                        </div>
+                    </div>                    
+                    <div id="shotDescription">
+                        <p class="description" style="color:antiquewhite; margin-bottom: 40px;">•Mission: SWOT is a satellite designed to measure the topography of Earth's water surface,
+                            including oceans, rivers, lakes and reservoirs.
+                            •Purpose: Its main objective is to provide accurate measurements of water storage in surface
+                            water bodies. These measurements help track changes in water level, which is essential for
+                            monitoring floods, droughts and water resource management
+                        </p>
+                    </div>
+                </div>
 
-        <div>
-            <label>GPM: Global Precipitation Measurement</label>
-            <div>
-                <img onclick="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Global_Precipitation_Measurement_spacecraft_model.png/1024px-Global_Precipitation_Measurement_spacecraft_model.png" style="height: 300px;"></img>
+                <div style="margin-bottom: 20px;">
+                    <div style="margin-left: 25%;">
+                        <label style="font-size: 25px; color:antiquewhite; margin-bottom: 20px;">GPM: Global Precipitation Measurement</label>
+                        <div style="margin-top: 20px;">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Global_Precipitation_Measurement_spacecraft_model.png/1024px-Global_Precipitation_Measurement_spacecraft_model.png"
+                                style="height: 300px; "  onclick="showGPMDescription()"></img>
+                        </div>
+                    </div>                    
+                    <div id="GPMDescription" >
+                        <p class="description" style="color:antiquewhite;">• Mission: GPM is a satellite designed to measure and map precipitation around the world.
+                            • Purpose: GPM collects data on the amount, intensity and distribution of rainfall. This is
+                            critical to understanding how water is distributed in the atmosphere and converted to
+                            precipitation at the surface, which has important implications for water management and the
+                            prediction of extreme weather events such as storms and droughts
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <div style="margin-left: 25%;">
+                        <label  style="font-size: 25px; color:antiquewhite;margin-bottom: 20px;">SMAP: Soil Moisture Active Passive</label>
+                        <div style="margin-top: 20px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Soil_Moisture_Active_Passive_illustration_%2815-180%2C_cropped%29.jpg/1024px-Soil_Moisture_Active_Passive_illustration_%2815-180%2C_cropped%29.jpg" 
+                            style="height: 300px;"  onclick="showSMAPDescription()"></img>
+                        </div>
+                    </div>                  
+                    <div id="SMAPDescription" >
+                        <p class="description" style="color:antiquewhite;">•Mission: SMAP is a satellite that measures soil moisture on the Earth's surface.
+                            • Purpose: SMAP provides data on soil moisture in different regions of the world. This is useful
+                            for understanding soil water availability, agriculture, drought and the water cycle in general.
+                            It can also help prevent floods and landslides
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-bottom: 200px;">
+                    <div style="margin-left: 25%;">
+                        <label  style="font-size: 25px; color:antiquewhite;margin-bottom: 20px;">GRACE: Gravity Recovery and Climate Experiment and GRACE-FO (Follow-On)</label>
+                        <div style="margin-top: 20px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/GRACE_spacecraft_model_2.png/1280px-GRACE_spacecraft_model_2.png"
+                                style="height: 300px;" onclick="showGraceDescription()"></img>
+                        </div>
+                    </div>
+                    <div id="GraceDescription">
+                        <p class="description" style="color:antiquewhite;">•Mission: The GRACE and GRACE-FO satellites work together to measure variations in Earth's
+                            gravity.
+                            • Purpose: These satellites measure fluctuations in gravity caused by changes in water
+                            distribution on Earth, such as groundwater storage and mass redistribution from glaciers and ice
+                            sheets. This provides valuable information about the amount of water stored in different regions
+                            and how it is changing over time
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>•	Mission: GPM is a satellite designed to measure and map precipitation around the world.
-                    • Purpose: GPM collects data on the amount, intensity and distribution of rainfall. This is critical to understanding how water is distributed in the atmosphere and converted to precipitation at the surface, which has important implications for water management and the prediction of extreme weather events such as storms and droughts
-                    </p>
-            </div>
-        </div>
-        <div>
-            <label>SMAP: Soil Moisture Active Passive</label>
-            <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Soil_Moisture_Active_Passive_illustration_%2815-180%2C_cropped%29.jpg/1024px-Soil_Moisture_Active_Passive_illustration_%2815-180%2C_cropped%29.jpg" style="height: 300px;"></img>
-            </div>
-            <div>
-                <p>•Mission: SMAP is a satellite that measures soil moisture on the Earth's surface.
-                    • Purpose: SMAP provides data on soil moisture in different regions of the world. This is useful for understanding soil water availability, agriculture, drought and the water cycle in general. It can also help prevent floods and landslides
-                    </p>
-            </div>
-        </div>
-        <div>
-            <label>GRACE: Gravity Recovery and Climate Experiment and GRACE-FO (Follow-On)</label>
-            <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/GRACE_spacecraft_model_2.png/1280px-GRACE_spacecraft_model_2.png" style="height: 300px;"></img>
-            </div>
-            <div>
-                <p>•Mission: The GRACE and GRACE-FO satellites work together to measure variations in Earth's gravity.
-                    • Purpose: These satellites measure fluctuations in gravity caused by changes in water distribution on Earth, such as groundwater storage and mass redistribution from glaciers and ice sheets. This provides valuable information about the amount of water stored in different regions and how it is changing over time
-                    </p>
-            </div>       
         </div>
     </div>
+
 </body>
 
 </html>
+<script>
 
-<style>
+     function showShotDescription() {
+            const description = document.getElementById('shotDescription');
+
+            if (description.style.maxHeight) {
         
-</style>
+                description.style.maxHeight = null;
+                description.style.opacity = '0';
+            } else {
+                
+                description.style.maxHeight = "fit-content"
+                description.style.opacity = '1';
+            }
+        }
+        function showGPMDescription() {
+            const descriptionGPM = document.getElementById('GPMDescription');
+
+            if (descriptionGPM.style.maxHeight) {
+        
+                descriptionGPM.style.maxHeight = null;
+                descriptionGPM.style.opacity = '0';
+            } else {
+                
+                descriptionGPM.style.maxHeight = "fit-content"
+                descriptionGPM.style.opacity = '1';
+            }
+        }
+        function showSMAPDescription() {
+            const descriptionSMAP = document.getElementById('SMAPDescription');
+
+            if (descriptionSMAP.style.maxHeight) {
+        
+                descriptionSMAP.style.maxHeight = null;
+                descriptionSMAP.style.opacity = '0';
+            } else {
+                
+                descriptionSMAP.style.maxHeight = "fit-content"
+                descriptionSMAP.style.opacity = '1';
+            }
+        }
+        function showGraceDescription() {
+            const descriptionGrace = document.getElementById('GraceDescription');
+
+            if (descriptionGrace.style.maxHeight) {
+        
+                descriptionGrace.style.maxHeight = null;
+                descriptionGrace.style.opacity = '0';
+            } else {
+                
+                descriptionGrace.style.maxHeight = "fit-content"
+                descriptionGrace.style.opacity = '1';
+            }
+        }
+</script>
