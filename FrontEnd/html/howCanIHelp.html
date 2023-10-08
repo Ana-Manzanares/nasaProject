@@ -38,8 +38,8 @@
                     <div class="card bg-white rounded-lg" id="climaticChange">
                         <div class="card-body text-dark">
                             <div>
-                                <p style=" font-size: 21px; font-family: cursive;">Did you know that shower shoud durate 5 minutes, wasting only 100L of water? That means that
-                                    for every minute that you waste in the shower, you're wasting 20L of water</p>
+                                <p style=" font-size: 21px; font-family: cursive;">Did you know that a shower shoud last 5 minutes, wasting only 100L of water? That means that
+                                    for every minute that you take longer in the shower, you're wasting 20L of water</p>
                                 <label> You think thats nothing? Lets make some math!</label>
                             </div>
                             <div>
@@ -48,20 +48,28 @@
                             </div>
                             <div>
                                 <input type="number" id="numberShower"></input><label style="margin-left: 20px; font-size: 21px; font-family: cursive;">How many
-                                    showers?</label>
+                                    showers a day?</label>
                             </div>
                             <div>
                                 <button class="bg-primary" onclick="calculateWasteLiters()">Calculate</button>
                             </div>
                             <div id="resultShowerDiv" style="display: none;margin-top: 20px">
                                 <label id="ResultShower" ></label>
+                                <div>
+                                    <label>In Barcelona lives around 1.6 million persons. Imagine if everyone does the same as you!</label>
+                                </div>
+                                
+                                <button id="buttonPopulationShower" onclick="calculateShowerPopulation()" class="bg-primary">Calculate</button>
+                            </div>
+                            <div id="resulPopulationShower" style="display: none; margin-top: 20px ;">
+                                <label id="ResultShowerBCN" ></label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="margin-bottom: 20px;">
-                <label for="clickTeeth" style="cursor: pointer; font-weight: bold;font-size: larger; color:antiquewhite;font-size: 21px; font-family: cursive;">Brushing your teeth</label>
+                <label for="clickTeeth" style="cursor: pointer; font-weight: bold;font-size: larger; color:antiquewhite;font-size: 21px;">Brushing your teeth</label>
                 <input type="checkbox" id="clickTeeth" style="display: none;">
                 <div class="displayTeeth">
                     <div class="card bg-white rounded-lg" id="climaticChange">
@@ -81,19 +89,26 @@
                             </div>
                             <div id="resultBrushDiv" style="display: none;">
                                 <label id="ResultBrush"></label>
+                                <div>
+                                    <label>In Barcelona lives around 1.6 million persons. Imagine if everyone does the same as you!</label>
+                                </div>                               
+                                <button id="buttonPopulationBrush" onclick="calculateBrushPopulation()" class="bg-primary">Calculate</button>
+                            </div>
+                            <div id="resulPopulationBrush" style="display: none; margin-top: 20px ;">
+                                <label id="ResultBrushBCN" ></label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="margin-bottom: 20px;">
-                <label for="clickBathTub" style="cursor: pointer; font-weight: bold;font-size: larger;color:antiquewhite; font-size: 21px; font-family: cursive;">Shower or Bath Tub?</label>
+                <label for="clickBathTub" style="cursor: pointer; font-weight: bold;font-size: larger;color:antiquewhite; font-size: 21px;">Shower or Bath Tub?</label>
                 <input type="checkbox" id="clickBathTub" style="display: none;">
                 <div class="displayBathTub">
                     <div class="card bg-white rounded-lg" id="climaticChange">
                         <div class="card-body text-dark">
                             <div>
-                                <p style="font-size: 21px; font-family: cursive;">If we take a bathtub, we wasted almost 300L, instead of the 100L that you waste with a 5 minute shower</p>
+                                <p style="font-size: 21px; font-family: cursive;">If we take a bathtub, we wasted almost 300L, instead of the 100L waste with a 5 minute shower</p>
                                 <label font-size: 21px; font-family: cursive;> You think thats nothing? Lets make some math!</label>
                             </div>
                             <div>
@@ -104,13 +119,20 @@
                             </div>
                             <div id="resultBathTubDiv" style="display: none;">
                                 <label id="ResultBathTub"></label>
+                                <div>
+                                    <label>In Barcelona lives around 1.6 million persons. Imagine if everyone does the same as you!</label>
+                                </div>                               
+                                <button id="buttonPopulationTub" onclick="calculateTubPopulation()" class="bg-primary">Calculate</button>
+                            </div>
+                            <div id="resulPopulationTub" style="display: none; margin-top: 20px ;">
+                                <label id="ResultTubBCN" ></label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="margin-bottom: 20px;">
-                <label for="clickOthers" style="cursor: pointer; font-weight: bold;font-size: larger;color:antiquewhite;font-family: cursive;">Others changes!</label>
+                <label for="clickOthers" style="cursor: pointer; font-weight: bold;font-size: larger;color:antiquewhite;">Others changes!</label>
                 <input type="checkbox" id="clickOthers" style="display: none;">
                 <div class="displayOthers">
                     <div class="card bg-white rounded-lg" id="climaticChange">
@@ -128,7 +150,7 @@
                                         <p style="font-size: 21px; font-family: cursive;">Make sure the Dishwasher is completely full before using it.</p>
                                     </li>
                                     <li>
-                                        <label style="font-size: 21px; font-family: cursive;">WC:</label>
+                                        <label style="font-size: 21px; font-family: cursive;">Low-Flush WC:</label>
                                         <p style="font-size: 21px; font-family: cursive;">Low-flush toilets use less water per flush than older models. Consider updating them if possible.</p>
                                     </li>
                                     <li>
@@ -137,7 +159,7 @@
                                     </li>
                                     <li>
                                         <label style="font-size: 21px; font-family: cursive;">Washing the car:</label>
-                                        <p style="font-size: 21px; font-family: cursive;">When washing your car, fill a bucket with water instead of using the hose. This reduces water consumption</p>
+                                        <p style="font-size: 21px; font-family: cursive;">When washing your car, fill a bucket with water instead of using the hose. This reduces water consumption drastically</p>
                                     </li>
                                 </ul>
                         </div>
@@ -155,6 +177,8 @@
     const numberShower = document.getElementById("numberShower");
     const labelShower = document.getElementById("ResultShower");
     const divShower = document.getElementById("resultShowerDiv")
+    const labelShowerBCN = document.getElementById("ResultShowerBCN")
+    const divShowerBCN = document.getElementById("resulPopulationShower")
 
     toggleShower.addEventListener("change", function () {
         if (this.checked) {
@@ -168,6 +192,7 @@
         minuteShower.value = "";
         numberShower.value = "";
         divShower.style.display = "none";
+        divShowerBCN.style.display='none';
     }
     });
 
@@ -192,15 +217,46 @@
             }
 
             divShower.style.display = 'block'
+            divShowerBCN.style.display ='none'
         }
 
     }
+    function calculateShowerPopulation() {
+        if (minuteShower.value != "" && minuteShower.value != null && numberShower.value != "" && numberShower.value != null) {
+           
+            result = minuteShower.value * 20 * numberShower.value
+            normalLiters = 100 * numberShower.value
+            total = Math.abs(result - normalLiters)
+
+            finalResult = total* 1600000
+            resultPiscinas = finalResult/2500000
+            if (result > normalLiters) {
+                labelShowerBCN.textContent = "A " + finalResult.toLocaleString() + " liters of water has been wasted! The equivalent to " + resultPiscinas + " olympic pools"
+                labelShowerBCN.style.color="red"
+            } else if (result == normalLiters) {
+                labelShowerBCN.textContent = "Congratulations, all the showers were as it shoud be"
+            } else {
+                labelShowerBCN.textContent = "A " + finalResult.toLocaleString() + " liters of water has been saved. The equivalent to " + resultPiscinas + " olympic pools, Hurray !"
+                labelShowerBCN.style.color="green"
+            }
+            
+
+            divShowerBCN.style.display = 'block'
+        }
+    }
+
+
+
+
     //brush teeth
     const toggleBrush = document.getElementById("clickTeeth");
     const brushDisplay = document.querySelector(".displayTeeth");
     const daysBrush = document.getElementById("daysBrush");
     const labelBrush = document.getElementById("ResultBrush");
     const divBrush = document.getElementById("resultBrushDiv")
+    const labelBrushPop = document.getElementById("ResultBrushBCN");
+    const divBrushPop = document.getElementById("resulPopulationBrush")
+
 
     toggleBrush.addEventListener("change", function () {
         if (this.checked) {
@@ -211,24 +267,44 @@
             brushDisplay.style.opacity = "0";
             daysBrush.value =""
             divBrush.style.display = 'none'
+            divBrushPop.style.display ="none"
         }
     });
     function calculateWasteLitersBrush() {
        
-        if (daysBrush.value != "" && daysBrush.value != null && daysBrush.value != 0) {
-            result = daysBrush.value * 20 * 3
-            labelBrush.textContent = "You wasted " + result + " liters!"
-            labelBrush.style.color = "red"
-            divBrush.style.display = 'block'
+        if (daysBrush.value != "" && daysBrush.value != null) {
+            if(daysBrush.value == 0){
+                labelBrush.textContent = "Enter a correct Value"
+            }else{
+                result = daysBrush.value * 20 * 3
+                
+                labelBrush.textContent = "You wasted " + result + " liters!"
+                labelBrush.style.color = "red"
+                divBrush.style.display = 'block'            
+                divBrushPop.style.display ="none"
+            }            
         }
-
     }  
+    function calculateBrushPopulation() {
+           
+        result = daysBrush.value * 20 * 3
+        finalResult = result* 1600000
+        resultPiscinas = finalResult/2500000
+
+        labelBrushPop.textContent = "A total " + finalResult.toLocaleString() + " liters has been wasted! The equivalent to " + resultPiscinas + " olympic pools!" 
+        labelBrushPop.style.color = "red"
+        divBrushPop.style.display = 'block'
+
+        
+    }
     //Bath Tube
     const toggleBathTube = document.getElementById("clickBathTub");
     const BathTubeDisplay = document.querySelector(".displayBathTub");
     const daysBathTub = document.getElementById("daysBathTub");
     const labelBathTub = document.getElementById("ResultBathTub");
     const divBathTub = document.getElementById("resultBathTubDiv")  
+    const labelBathTubPop = document.getElementById("ResultTubBCN");
+    const divBathTubPop = document.getElementById("resulPopulationTub")  
 
     toggleBathTube.addEventListener("change", function () {
         if (this.checked) {
@@ -239,16 +315,31 @@
             BathTubeDisplay.style.opacity = "0";
             daysBathTub.value =""
             divBathTub.style.display = 'none'
+            divBathTubPop.style.display = 'none'
+
         }
     });
     function calculateWasteLitersBathTub() {
-        
+
         if (daysBathTub.value != "" && daysBathTub.value != null && daysBathTub.value != 0) {
             result = daysBathTub.value * 200
             labelBathTub.textContent = "You wasted " + result + " liters!"
             labelBathTub.style.color = "red"
             divBathTub.style.display = 'block'
+            divBathTubPop.style.display = 'none'
         }
+
+    }
+
+    function calculateTubPopulation() {
+        
+        result = daysBathTub.value * 200
+        finalResult = result* 1600000
+        resultPiscinas = finalResult/2500000
+        labelBathTubPop.textContent = "A total of " + finalResult.toLocaleString() + " liters has been wasted! The equivalent of " + resultPiscinas + " olympics pools"
+        labelBathTubPop.style.color = "red"
+        divBathTubPop.style.display = 'block'
+        
 
     }
     const toggleOther = document.getElementById("clickOthers");
